@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Cart- Luka collection</title>
+    <title>Luka Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,
+    200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;
+    1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo3.jpg" width="255px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">Contact Us</a></li>
+                <li><a href="accout.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="logo cart.png" width="30px" height="30px"></a>
+        <img src="menulogo.png" class="menu-icon" onclick="menutoggle()">
+      </div>
+   </div>
+</div>
+ <!--cart items details--->
+ <div class="small-cointainer cart-page">
+    <table>
+        <tr>
+           <th>Product</th> 
+           <th>Quantity</th> 
+           <th>Subtotal</th>  
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="gs3.jpg" width="20%">
+                    <div>
+                        <p>Tshirt</p>
+                        <small> Price: $26.99</small>
+                        <br>
+                    <a href=""> Remove</a>
+                    </div>
+                </div>
+                </td>
+            <td><input type="number" value="1"></td>
+            <td>$26.99</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="boy  shirt 1.jpg" width="20%">
+                    <div>
+                        <p>Tshirt</p>
+                        <small> Price: $20.99</small>
+                        <br>
+                    <a href=""> Remove</a>
+                    </div>
+                </div>
+                </td>
+            <td><input type="number" value="1"></td>
+            <td>$20.99</td>
+        </tr>
+        <tr>
+
+        </tr>
+            <td>
+                <div class="cart-info">
+                    <img src="gs 2.jpg" width="20%">
+                    <div>
+                        <p>Tshirt</p>
+                        <small> Price: $28.99</small>
+                        <br>
+                    <a href=""> Remove</a>
+                    </div>
+                </div>
+                </td>
+            <td><input type="number" value="1"></td>
+            <td>$28.99</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$76.97</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$30.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$106.97</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+ </div>
+
+    <!---FooTER-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <!-------<div class="fotter-col-1"></div>
+                    <h3>Our </h3>
+                    <p>Thank you for choosing us  </p>
+                </div>-->
+                <div class="footer-col-2">
+                    <img src="logo4.jpg" alt="">
+                    <p> Our purpose is to sustainability make the pleasure and benefit  of dress  accessible to tha many.</p>
+                </div>
+                <div class="fotter-col-3">
+                    <h3>Useful </h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Our service</li>
+                        <li>Return policy</li>
+                        <li>FAQ page </li>
+                        <a href="about.html"><li>Contact us</li></a>
+                    </ul>
+                </div>
+                <div class="fotter-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+                
+
+            </div>
+            <hr>
+                <p class="copyright"> Luka.collection.au is the official site. @Copyright 2024-All right Reserved</p>
+
+        </div>
+    </div>
+    <!------js for toggle menu----->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px"
+        function menutoggle(){
+            if (MenuItems.style.maxHeight =="0px"){
+                MenuItems.style.maxHeight ="200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+
+        }
+    </script>
+    
+
+</body>
+</html>

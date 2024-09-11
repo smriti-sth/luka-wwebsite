@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> All product-Luka collection| Ecommerce website Design</title>
+    <title>Luka Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,
+    200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;
+    1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+   <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo3.jpg" width="255px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Gents</a></li>
+                <li><a href="product.html">Ladies</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">Contact Us</a></li>
+                <li><a href="accout.html">Account</a></li>
+                
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="logo cart.png" width="30px" height="30px"></a>
+        <img src="menulogo.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+   </div>
+</div>
+     
+     <!-----all product------> 
+     <div class="small-cantainer">
+        <div class="row row-2">
+            <h2>All Product</h2>
+            <select> 
+                <option> Default shorting</option>
+                <option> Short by price</option>
+                <option> Short by popularity</option>
+                <option> Short by sale</option>
+            </select> 
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="boy  shirt 1.jpg">
+                <h4> Casual shirt</h4>
+                
+                <p>$20.99</p>
+
+            </div>
+            <div class="col-4">
+                <img src="bp2.jpg">
+                <h4> Pant</h4>
+                
+                <p>$39.99</p>
+
+            </div>
+            <div class="col-4">
+                <img src="gp1 .jpg">
+                <h4> Casual Pants</h4>
+                
+                <p>$25.99</p>
+
+            </div><div class="col-4">
+                <img src="gshir 1.jpg">
+                <h4> White T-Shirt </h4>
+                
+                <p>$17.99</p>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="boy  shirt 1.jpg">
+                <h4> Casual shirt</h4>
+                
+                <p>$20.99</p>
+
+            </div>
+            <div class="col-4">
+                <img src="boy shirt 2.jpg">
+                <h4> T-Shirt</h4>
+                
+                <p>$39.99</p>
+
+            </div>
+            <div class="col-4">
+                <img src="bt 2.jpg">
+                <h4> Blue shirt</h4>
+                
+                <p>$25.99</p>
+
+            </div>
+            <div class="col-4">
+                <img src="boy pant 2.jpg">
+                <h4> T-Shirt </h4>
+                
+                <p>$17.99</p>
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594</span>
+        </div>
+     </div>
+
+    <!---------FO0TER--------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <!-------<div class="fotter-col-1"></div>
+                    <h3>Our </h3>
+                    <p>Thank you for choosing us  </p>
+                </div>-->
+                <div class="footer-col-2">
+                    <img src="logo4.jpg" alt="">
+                    <p> Our purpose is to sustainability make the pleasure and benefit  of dress  accessible to many.</p>
+                </div>
+                <div class="fotter-col-3">
+                    <h3>Useful</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Our service</li>
+                        <li>Return policy</li>
+                        <li>FAQ page </li>
+                        <a href="about.html"><li>Contact us</li></a>
+                    </ul>
+                </div>
+                <div class="fotter-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+                
+
+            </div>
+            <hr>
+                <p class="copyright"> Luka.collection.au is the official site. Copyright 2024-All right Reserved</p>
+
+        </div>
+    </div>
+    <!------js for toggle menu----->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px"
+        function menutoggle(){
+            if (MenuItems.style.maxHeight =="0px"){
+                MenuItems.style.maxHeight ="200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+
+        }
+    </script>
+
+</body>
+</html>
+
+   

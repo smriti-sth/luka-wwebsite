@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Account- Luka collection</title>
+    <title>Luka Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,
+    200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;
+    1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo3.jpg" width="255px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">Contact Us</a></li>
+                <li><a href="accout.html">Account</a></li>
+
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="logo cart.png" width="30px" height="30px"></a>
+        <img src="menulogo.png" class="menu-icon" onclick="menutoggle()">
+      </div>
+   </div>
+</div>
+<!--account page--->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="home.jpg" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()"> Login </span>
+                        <span onclick="register()"> Register </span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="Loginform">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <a href="home.html"><button type="submit" class="btn"> Login</button></a>
+                        <a href="">Forget Password</a>
+                    </form>
+
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <a href="home.html"><button type="submit" class="btn">Register </button></a>
+                        <a href="">Forget Password</a>
+                    </form>
+                    <div></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!---FooTER-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <!-------<div class="fotter-col-1"></div>
+                    <h3>Our </h3>
+                    <p>Thank you for choosing us  </p>
+                </div>-->
+                <div class="footer-col-2">
+                    <img src="logo4.jpg" alt="">
+                    <p> Our purpose is to sustainability make the pleasure and benefit  of dress  accessible to tha many.</p>
+                </div>
+                <div class="fotter-col-3">
+                    <h3>Useful </h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Our service</li>
+                        <li>Return policy</li>
+                        <li>FAQ page </li>
+                        <a href="about.html"><li>Contact us</li></a>
+                    </ul>
+                </div>
+                <div class="fotter-col-4">
+                    <h3>Follow US</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+                
+
+            </div>
+            <hr>
+                <p class="copyright"> Luka.collection.au is the official site. Copyright 2024-All right Reserved</p>
+
+        </div>
+    </div>
+    <!------js for toggle menu----->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px"
+        function menutoggle(){
+            if (MenuItems.style.maxHeight =="0px"){
+                MenuItems.style.maxHeight ="200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+
+        }
+    </script>
+    <!-------Js for toggle form-->
+    <script>
+        var Loginform = document.getElementById("Loginform");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+         
+        function register(){
+            RegForm.style.transform = "translate(0px)";
+            Loginform.style.transform = "translate(0px)";
+            Indicator.style.transform = "translate(100px)";
+        }
+        function login(){
+            RegForm.style.transform = "translate(300px)";
+            Loginform.style.transform = "translate(300px)";
+            Indicator.style.transform = "translate(0px)";
+        }
+
+    </script>
+    
+
+</body>
+</html>
